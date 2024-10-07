@@ -39,6 +39,7 @@ export const Media = () => {
                 <button className="border-2 p-2 rounded-xl border-amareloQueimado bg-amareloClaro hover:bg-amareloQueimado hover:border-amareloClaro hover:text-branco h-12" onClick={calcular}>Calcular média</button>
                 <p className="text-branco font-bold text-[24px] md:ml-12">Média das notas: {!isNaN(media ?? NaN) ? media?.toFixed(2) : msgerror}</p>
             </div>
+            <p className={`text-branco font-bold text-[24px] md:ml-12 mt-10 ${media && media >= 7? "text-verde" : "text-vermelho"}`}>Média das notas: {media && media >= 7? "PASSOU" : "NÃO PASSOU"}</p>
         </div>
         </>
     )

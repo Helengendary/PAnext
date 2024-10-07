@@ -15,6 +15,8 @@ const config: Config = {
         amareloMeio: "var(--amareloMeio)",
         amareloQueimado: "var(--amareloQueimado)",
         azul: "var(--azul)",
+        vermelho: "var(--vermelho)",
+        verde: "var(--verde)",
       },
     },
   },
